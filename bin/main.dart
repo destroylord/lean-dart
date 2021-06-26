@@ -1,5 +1,6 @@
 void main(List<String> args) {
-  Iterable iterable = ['salad', 'popcorn', 'toast'];
+  var numbers = [1, 3,-2,0,4,5];
 
-  print('The first element is ${iterable.first}');
+  var numbersUntilZero = numbers.takeWhile((number) => number != -2);
+  print('Numbers until 0: $numbersUntilZero');
 }
